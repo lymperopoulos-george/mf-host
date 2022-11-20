@@ -1,0 +1,72 @@
+{
+  "name": "mf-host",
+  "version": "0.1.0",
+  "private": true,
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=16"
+  },
+  "scripts": {
+    "prepare": "husky install",
+    "start": "echo \"No start script! You should distribute dist folder\" && exit 0",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "dev": "webpack serve --hot",
+    "dev:mf": "webpack serve",
+    "lint": "eslint src",
+    "build": "tsc --noEmit && webpack --mode production"
+  },
+  "devDependencies": {
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.5.5",
+    "@testing-library/jest-dom": "^5.16.0",
+    "@testing-library/react": "^12.1.5",
+    "@testing-library/user-event": "^14.0.0",
+    "@types/jest": "^27.4.0",
+    "@types/node": "^16.0.0",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "@types/react-test-renderer": "^17.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.17.0",
+    "@typescript-eslint/parser": "^5.17.0",
+    "copy-webpack-plugin": "^10.2.0",
+    "eslint": "^8.12.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-jsx-a11y": "^6.5.0",
+    "eslint-plugin-react": "^7.29.0",
+    "eslint-webpack-plugin": "^3.1.0",
+    "html-webpack-plugin": "^5.5.0",
+    "husky": "^7.0.0",
+    "jest": "^27.5.0",
+    "lint-staged": "^12.3.0",
+    "msw": "^0.39.2",
+    "prettier": "^2.6.0",
+    "react-refresh-typescript": "^2.0.5",
+    "react-test-renderer": "^17.0.0",
+    "replace-in-file": "^6.3.0",
+    "source-map-loader": "^3.0.0",
+    "ts-jest": "^27.1.0",
+    "ts-loader": "^9.3.0",
+    "tsconfig-paths-webpack-plugin": "^3.5.0",
+    "typescript": "^4.6.0",
+    "webpack": "^5.70.0",
+    "webpack-cli": "^4.9.0",
+    "webpack-dev-server": "^4.7.0"
+  },
+  "dependencies": {
+    "@emotion/cache": "^11.7.0",
+    "@emotion/react": "^11.8.0",
+    "@emotion/styled": "^11.8.0",
+    "@mui/icons-material": "^5.5.0",
+    "@mui/lab": "^5.0.0-alpha.79",
+    "@mui/material": "^5.5.0",
+    "@types/luxon": "^2.3.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-intl": "^6.0.3",
+    "react-markdown": "^8.0.2",
+    "refresh-fetch": "^0.8.0"
+  },
+  "msw": {
+    "workerDirectory": "public"
+  }
+}
